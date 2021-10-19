@@ -2,6 +2,8 @@
 
 This github action builds and deploys a java application to the Azure Kubernetes Service (AKS) with a Contrast Security Java Agent.
 
+Other supported languages coming soon...
+
 ## Prerequisites
 
 - An Azure Service Principle with enough permissions to: 
@@ -73,9 +75,9 @@ Can be found at these links:
 ## Example Use
 
 ```sh
-- name: Contrast Security Azure Kubernetes Service Deployment
-        uses: admiralappsec/aks-github-action@v1
-        id: contrast-deployment
+- name: Contrast Security AKS Build Deploy
+        uses: Contrast-Security-OSS/aks-github-action@v0.5
+        id: contrast-build-deploy
         with:
           contrast-security-credentials-file: ${{ secrets.CONTRAST_CREDS_FILE }}
           azure-credentials-file: ${{ secrets.AZURE_CREDS_FILE }}
