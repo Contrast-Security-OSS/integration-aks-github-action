@@ -1,8 +1,8 @@
-name: 'Contrast Security Azure Kubernetes Service Deployment'
-description: 'Deploy an Azure Kubernetes Service Application with a Contrast Security Agent'
+name: 'Contrast Security AKS Build Deploy'
+description: 'Build and deploy a container application to Azure Kubernetes Service with a Contrast Security Agent'
 branding:
   icon: 'check-square'
-  color: 'gray-blue'
+  color: 'green'
 inputs:
   azure-credentials-file:
     description: 'The configuration file contents for Azure-specific logins, regions, etc...'
